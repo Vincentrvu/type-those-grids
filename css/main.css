@@ -14,9 +14,7 @@ body {
 }
 
 main {
-  grid-template-areas:
-  "banner"
-  "info";
+  grid-template-areas:"banner""info";
 }
 
 .banner {
@@ -33,6 +31,8 @@ main {
   grid-row: 2;
   color: white;
   z-index: 1;
+  align-self: end;
+  margin-left: 1rem;
 }
 
 .banner img {
