@@ -14,7 +14,7 @@ body {
 }
 
 main {
-  grid-template-areas:"banner""info";
+  grid-template-areas: "banner" "info";
 }
 
 .banner {
