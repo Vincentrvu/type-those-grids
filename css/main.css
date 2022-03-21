@@ -1,5 +1,5 @@
 html {
-  font-family: "Merriweather", serif;
+  font-family: "Merriweather", italic;
   font-size: 1rem;
   line-height: 1.5;
   box-sizing: border-box;
@@ -13,7 +13,14 @@ body {
   box-sizing: inherit;
 }
 
+main {
+  grid-template-areas:
+  "banner"
+  "info";
+}
+
 .banner {
+  grid-area: banner;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   gap: .75rem;
@@ -34,6 +41,7 @@ body {
 }
 
 aside {
+  grid-area: info;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
